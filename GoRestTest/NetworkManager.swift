@@ -32,7 +32,7 @@ protocol GoRestAPI {
 
 extension Network: GoRestAPI {
     
-    static let ACCESS_TOKEN = "*****"
+    static let ACCESS_TOKEN = "e7b2b98a62e7a49c18af30e96bf24a27ef9e42d96ca183531816339f7bd7771d"
     
     //TODO
     func getUsers() {
