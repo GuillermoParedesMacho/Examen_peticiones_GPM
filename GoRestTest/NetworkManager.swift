@@ -37,27 +37,36 @@ extension Network: GoRestAPI {
     
     //TODO
     func getUsers() {
-        <#code#>
+        let url = "https://gorest.co.in/public-api/users";
+        
+        URLSession.shared.dataTask(with: URL(string:url)!){
+            data,response,error in
+            
+            debugPrint(data)
+            debugPrint(response)
+            debugPrint(error)
+            
+        }.resume()
     }
     
     //TODO
     func postUser() {
-        <#code#>
+        
     }
     
     //TODO
     func patchUser() {
-        <#code#>
+        
     }
     
     //TODO
     func putUser() {
-        <#code#>
+        
     }
     
     //TODO
     func deleteUser() {
-        <#code#>
+        
     }
     
 }
